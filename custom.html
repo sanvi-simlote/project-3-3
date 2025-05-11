@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customize Your Tote Bag</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Green Drip</h1>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="custom.html">Customize</a></li>
+                <li><a href="sustanibility.html">Sustainability</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="accordion.html">FAQs</a></li>
+                <li><a href="slideshow.html">slideshow</a></li>
+                <li><a href="form.html">Order</a></li>
+                <li><a href="resume.html">resume</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <div class="customize-container">
+        <h1>Customize Your Tote Bag</h1>
+    
+        <label for="color">Choose Bag Color:</label>
+        <select id="color">
+          <option value="#000000">Black</option>
+          <option value="#ffffff">White</option>
+          <option value="#ff69b4">Pink</option>
+          <option value="#228B22">Green</option>
+          <option value="#1e90ff">Blue</option>
+        </select>
+    
+        <br><br>
+    
+        <label for="customText">Write Your Text:</label><br>
+        <input type="text" id="customText" placeholder="Type your message">
+    
+        <div class="preview-box">
+          <h3>Preview</h3>
+          <div id="preview" class="tote-preview" style="background-color: #000000;">
+            Your Text Here
+          </div>
+        </div>
+    
+        <div class="product">Buy now</div>
+        <div class="product">save</div>
+      </div>
+    
+      <script>
+        const colorPicker = document.getElementById('color');
+        const textInput = document.getElementById('customText');
+        const preview = document.getElementById('preview');
+    
+        colorPicker.addEventListener('change', () => {
+          preview.style.backgroundColor = colorPicker.value;
+        });
+    
+        textInput.addEventListener('input', () => {
+          preview.textContent = textInput.value || 'Your Text Here';
+        });
+      </script>
+    
+    </body>
+    </html>
+    

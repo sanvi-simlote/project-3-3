@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Place Your Order</h1>
+  <nav>
+    <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="custom.html">Customize</a></li>
+                <li><a href="sustanibility.html">Sustainability</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="accordion.html">FAQs</a></li>
+                <li><a href="slideshow.html">slideshow</a></li>
+                <li><a href="form.html">Order</a></li>
+                <li><a href="resume.html">resume</a></li>
+  </nav>
+</header>
+
+<form id="orderForm">
+  <!-- Step 1 -->
+  <div class="step">
+    <h2>Step 1: Your Info</h2>
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <button type="button" onclick="nextStep()">Next</button>
+  </div>
+
+  <!-- Step 2 -->
+  <div class="step">
+    <h2>Step 2: Order Details</h2>
+    <select id="product" required>
+      <option value="">Select a Tote Bag</option>
+      <option value="Classic Tote">Classic Tote</option>
+      <option value="Eco Shopper">Eco Shopper</option>
+      <option value="Custom Print">Custom Print</option>
+    </select>
+    <input type="number" id="quantity" placeholder="Quantity" min="1" required>
+    <button type="button" onclick="nextStep()">Next</button>
+  </div>
+
+  <!-- Step 3 -->
+  <div class="step">
+    <h2>Step 3: Confirm Order</h2>
+    <p>Click 'Submit Order' to complete your order.</p>
+    <button type="submit">Submit Order</button>
+  </div>
+</form>
+
+<footer>
+  <p>&copy; 2025 Your Website</p>
+</footer>
+
+<script src="Form.js"></script>
+
+</body>
+</html>

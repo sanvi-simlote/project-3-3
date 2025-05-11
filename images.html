@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slideshow</title>
+  <link rel="stylesheet" href="styles.css"> 
+  <script src="slideshow.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Tote Bag Gallery</h1>
+    <nav>
+      <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="custom.html">Customize</a></li>
+                <li><a href="sustanibility.html">Sustainability</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="accordion.html">FAQs</a></li>
+                <li><a href="slideshow.html">slideshow</a></li>
+                <li><a href="form.html">Order</a></li>
+                <li><a href="resume.html">resume</a></li>
+      
+    </nav>
+  </header>
+
+  <main>
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <img src="images/bag1.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="images/bag2.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="images/bag3.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="images/bag4.jpg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sanvi's Tote Bag Site</p>
+  </footer>
+</body>
+</html>
